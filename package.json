@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push": "npm run lint && npm run build && npm publish --registry http://10.1.6.28"
   },
-  "author": "",
+  "author": "炒饭 <chaofan@2dfire.com>",
   "license": "ISC"
 }
