@@ -1,4 +1,4 @@
-const logIt = require('log_it');
+const logIt = require('log_it').default;
 
 const log = logIt('@2d-socket:socketGlobalEventHandle');
 let isInitSocketGlobalEvent = false;
