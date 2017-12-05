@@ -18,9 +18,9 @@ module.exports = {
         // new webpack.DefinePlugin({
         //     'typeof window': JSON.stringify('undefined'),
         // }),
-        new UglifyJSPlugin({
-            sourceMap: false,
-        }),
+        // new UglifyJSPlugin({
+        //     sourceMap: false,
+        // }),
         new webpack.ProvidePlugin({
             'global.WebSocket': path.resolve(__dirname, 'src/ws/index'),
         }),
