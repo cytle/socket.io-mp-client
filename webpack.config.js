@@ -10,6 +10,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: '[name].js',
+        library: 'wxappIo',
+        libraryTarget: 'umd',
     },
     plugins: [
         // new webpack.NormalModuleReplacementPlugin(/^ws$/, '@2dfire/wxapp-websocket'),
