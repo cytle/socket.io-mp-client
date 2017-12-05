@@ -1,15 +1,24 @@
 {
-  "name": "@2dfire/wxapp-websocket",
+  "name": "socket.io-wxapp-client",
   "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "push": "npm publish --registry http://10.1.6.28"
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "炒饭 <chaofan@2dfire.com>",
   "license": "ISC",
   "dependencies": {
-    "log_it": "^1.0.8"
+    "debug": "^3.1.0",
+    "log_it": "^1.0.8",
+    "socket.io-client": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.10.0"
   }
 }

@@ -1,10 +1,10 @@
-const logIt = require('log_it').default;
+import debug from 'debug';
 
-const log = logIt('@2d-socket:socketGlobalEventHandle');
+const log = debug('socket.io-wxapp-client:socketGlobalEventHandle');
 let isInitSocketGlobalEvent = false;
 
 const defaultGloableEventHandler = (...args) => {
-    log.warn('没有socket全局处理事件 %O', args);
+    log('没有socket全局处理事件 %O', args);
 };
 
 // 全局事件接受者
@@ -14,7 +14,7 @@ let gloableEventHandler;
  * 监听小程序socket全局的事件
  * @param  {Function} handler 事件接受者
  */
-module.exports = function socketGlobalEventHandle(handler = defaultGloableEventHandler) {
+export default function socketGlobalEventHandle(handler = defaultGloableEventHandler) {
     // 设置全局事件接受者
     gloableEventHandler = handler;
 
@@ -37,7 +37,7 @@ module.exports = function socketGlobalEventHandle(handler = defaultGloableEventH
     });
 
     wx.onSocketMessage((res) => {
-        log.info('message', res);
+        log('message', res);
         gloableEventHandler('message', res);
     });
-};
+}

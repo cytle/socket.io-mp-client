@@ -1,4 +1,4 @@
-const socketGlobalEventHandle = require('./socketGlobalEventHandle');
+import socketGlobalEventHandle from './socketGlobalEventHandle';
 
 function isString(o) {
     return typeof o === 'string';
@@ -15,7 +15,7 @@ function WebSocket(url, protocols) {
         if (isString(protocols)) {
             protocols = [protocols];
         } else if (!isArray(protocols)) {
-            protocols = undefined;
+            throw new DOMException(`Failed to construct 'WebSocket': The subprotocol '${protocols}' is invalid.`);
         }
     }
     if (globalWebsocket) {
