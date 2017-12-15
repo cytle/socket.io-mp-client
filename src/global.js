@@ -13,4 +13,4 @@ const g = {
     self: g,
     global: g,
 };
-module.export = g;
+module.exports = g;
