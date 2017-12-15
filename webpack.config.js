@@ -22,7 +22,7 @@ module.exports = {
         //     sourceMap: false,
         // }),
         new webpack.ProvidePlugin({
-            'global.WebSocket': path.resolve(__dirname, 'src/ws/index'),
+            global: path.resolve(__dirname, 'src/global'),
         }),
     ],
 
