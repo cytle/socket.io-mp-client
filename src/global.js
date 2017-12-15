@@ -1,6 +1,6 @@
 const WebSocket = require('./ws');
 
-module.export = {
+const g = {
     Number,
     String,
     Object,
@@ -10,4 +10,7 @@ module.export = {
     Math,
     JSON,
     WebSocket,
+    self: g,
+    global: g,
 };
+module.export = g;
