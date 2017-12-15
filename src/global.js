@@ -10,7 +10,8 @@ const g = {
     Math,
     JSON,
     WebSocket,
-    self: g,
-    global: g,
 };
+
+g.self = g;
+g.global = g;
 module.exports = g;
