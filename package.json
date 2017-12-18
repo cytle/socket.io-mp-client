@@ -1,6 +1,6 @@
 {
   "name": "socket.io-wxapp-client",
-  "version": "1.0.11",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "debug": "^3.1.0",
     "log_it": "^1.0.8",
-    "socket.io-client": "1.4.8"
+    "socket.io-client": "^2.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
