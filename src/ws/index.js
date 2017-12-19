@@ -51,7 +51,7 @@ WebSocket.prototype.send = function send(data) {
     }
     if (this.readyState === WebSocket.CONNECTING) {
         /* eslint no-console: "off" */
-        throw new DOMException("DOMException: Failed to execute 'send' on 'WebSocket': Still in CONNECTING state.");
+        throw new DOMException("Failed to execute 'send' on 'WebSocket': Still in CONNECTING state.");
     }
     if (this.readyState !== WebSocket.OPEN) {
         /* eslint no-console: "off" */
