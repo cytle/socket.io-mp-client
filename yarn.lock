@@ -1157,6 +1157,21 @@ engine.io-parser@~2.1.1:
     blob "0.0.4"
     has-binary2 "~1.0.2"
 
+engine.io-wxapp-client@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.5.tgz#f40187aa5334f76125e3b09eb97230c2946c7c0f"
+  dependencies:
+    component-emitter "1.2.1"
+    component-inherit "0.0.3"
+    debug "~2.6.9"
+    engine.io-parser "~2.1.1"
+    has-cors "1.1.0"
+    indexof "0.0.1"
+    parseqs "0.0.5"
+    parseuri "0.0.5"
+    wxapp-websocket "^1.0.0"
+    yeast "0.1.2"
+
 enhanced-resolve@^3.4.0:
   version "3.4.1"
   resolved "http://registry.npm.taobao.org/enhanced-resolve/download/enhanced-resolve-3.4.1.tgz#0421e339fd71419b3da13d129b3979040230476e"
@@ -3001,6 +3016,12 @@ ws@~3.3.1:
     async-limiter "~1.0.0"
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
+
+wxapp-websocket@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/wxapp-websocket/download/wxapp-websocket-1.0.0.tgz#579ba82dee436ef9c17861140e8306e1d93c9e82"
+  dependencies:
+    debug "^3.1.0"
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.4"

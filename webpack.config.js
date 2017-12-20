@@ -21,9 +21,10 @@ module.exports = {
         // new UglifyJSPlugin({
         //     sourceMap: false,
         // }),
-        new webpack.ProvidePlugin({
-            'global.WebSocket': path.resolve(__dirname, 'src/ws/index'),
-        }),
+        // new webpack.ProvidePlugin({
+        //     'global.WebSocket': path.resolve(__dirname, 'src/ws/index'),
+        // }),
+        new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-wxapp-client'),
     ],
 
     module: {
