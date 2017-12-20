@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-
+const Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = {
     entry: {
@@ -13,17 +13,25 @@ module.exports = {
         library: 'wxappIo',
         libraryTarget: 'umd',
     },
+    resolve: {
+        alias: {
+            debug: path.resolve(path.join(__dirname, 'node_modules', 'debug')),
+        },
+    },
     plugins: [
         // new webpack.NormalModuleReplacementPlugin(/^ws$/, '@2dfire/wxapp-websocket'),
         // new webpack.DefinePlugin({
         //     'typeof window': JSON.stringify('undefined'),
         // }),
-        // new UglifyJSPlugin({
-        //     sourceMap: false,
-        // }),
+        new UglifyJSPlugin({
+            sourceMap: false,
+        }),
         // new webpack.ProvidePlugin({
         //     'global.WebSocket': path.resolve(__dirname, 'src/ws/index'),
         // }),
+        new Visualizer({
+            filename: './statistics.html',
+        }),
         new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-wxapp-client'),
     ],
 
