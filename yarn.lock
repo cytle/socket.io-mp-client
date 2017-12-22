@@ -1966,10 +1966,6 @@ lodash@^4.14.0, lodash@^4.17.4:
   version "4.17.4"
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
-log_it@^1.0.8:
-  version "1.0.8"
-  resolved "http://registry.npm.taobao.org/log_it/download/log_it-1.0.8.tgz#6dabac267f0a19c0db12300749f50e2ad879c386"
-
 longest@^1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/longest/download/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
