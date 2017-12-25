@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^3.1.0",
-    "engine.io-wxapp-client": "^3.1.7",
+    "engine.io-wxapp-client": "^3.1.8",
     "socket.io-client": "^2.0.4"
   },
   "devDependencies": {

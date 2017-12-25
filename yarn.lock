@@ -1206,9 +1206,9 @@ engine.io-parser@~2.1.1:
     blob "0.0.4"
     has-binary2 "~1.0.2"
 
-engine.io-wxapp-client@^3.1.7:
-  version "3.1.7"
-  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.7.tgz#713ed83722688279a8d6415c84febb4796fa9e39"
+engine.io-wxapp-client@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.8.tgz#75b014dbfeca74d151aeb265f466bfce7baa4146"
   dependencies:
     component-emitter "1.2.1"
     component-inherit "0.0.3"
@@ -1218,7 +1218,7 @@ engine.io-wxapp-client@^3.1.7:
     indexof "0.0.1"
     parseqs "0.0.5"
     parseuri "0.0.5"
-    wxapp-websocket "^1.0.2"
+    wxapp-websocket "^1.0.3"
     yeast "0.1.2"
 
 enhanced-resolve@^3.4.0:
@@ -3172,9 +3172,9 @@ ws@~3.3.1:
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
-wxapp-websocket@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/wxapp-websocket/-/wxapp-websocket-1.0.2.tgz#1ff1e7ed563e010a88296068d1f407a83ae4c3a8"
+wxapp-websocket@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/wxapp-websocket/-/wxapp-websocket-1.0.3.tgz#98962d16b3e47b269b461352bfc21359d013df61"
   dependencies:
     debug "^3.1.0"
 
