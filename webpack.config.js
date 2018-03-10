@@ -20,6 +20,7 @@ const baseConfig = {
     ],
 };
 
+// 只打包socket.io-client
 const commonJsConfig = merge(baseConfig, {
     output: {
         filename: 'index.js',
@@ -42,6 +43,7 @@ const commonJsConfig = merge(baseConfig, {
     ],
 });
 
+// 单文件打包配置（微信小程序）
 const singleConfig = merge(baseConfig, {
     output: {
         filename: 'socket.io-wxapp.js',
@@ -58,4 +60,16 @@ const singleConfig = merge(baseConfig, {
     ],
 });
 
-module.exports = [commonJsConfig, singleConfig];
+// 支付宝小程序打包
+const singleConfigForMy = merge(singleConfig, {
+    output: {
+        filename: 'socket.io-myapp.js',
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            wx: 'my',
+        }),
+    ],
+});
+
+module.exports = [commonJsConfig, singleConfig, singleConfigForMy];
