@@ -26,5 +26,5 @@ const myappIo = require('socket.io-wxapp-client/socket.io-myapp.js');
 
 按需把对应文件拷贝到工程目录下, 然后引入
 
-- `lib/socket.io-wxapp.js`: 微信小程序文件
-- `lib/socket.io-myapp.js`: 支付宝小程序文件
+- 微信小程序: [lib/socket.io-wxapp.js](lib/socket.io-wxapp.js)
+- 支付宝小程序: [lib/socket.io-myapp.js](lib/socket.io-myapp.js)
