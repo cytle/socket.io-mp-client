@@ -6,7 +6,13 @@
 
 ## Usage
 
-使用同[socket.io](https://socket.io/docs/)
+使用和`web`版一致, 文档在此[socket.io](https://socket.io/docs/),.
+
+**不同处**: 因为小程序没有`xhr`, 这边也就不支持`polling`(轮询), 在`engine.io-wxapp-client`包中就砍
+掉了这部分. 对小程序开发没啥影响, 不过也需要提下
+
+1. `transports`类型, 也不支持`polling`, 只有`websocket`
+2. `web`版建立`websocket`前会使用`http`请求握手, 小程序默认直接打开`socket`连接
 
 ### 1. npm包
 
