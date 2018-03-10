@@ -10,7 +10,7 @@ const baseConfig = {
     },
     output: {
         path: path.resolve(__dirname, 'lib'),
-        libraryTarget: 'commonjs',
+        libraryTarget: 'commonjs2',
     },
     plugins: [
         new UglifyJSPlugin({
