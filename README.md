@@ -2,6 +2,8 @@
 
 小程序socket.io客户端
 
+![socket.io-client v-2.0.4](https://img.shields.io/badge/socket.io--client-v2.0.4-blue.svg)
+
 ## Usage
 
 使用同[socket.io](https://socket.io/docs/)
