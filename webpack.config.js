@@ -13,9 +13,9 @@ const baseConfig = {
         libraryTarget: 'commonjs2',
     },
     plugins: [
-        // new UglifyJSPlugin({
-        //     sourceMap: false,
-        // }),
+        new UglifyJSPlugin({
+            sourceMap: false,
+        }),
         new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-wxapp-client'),
     ],
 };
