@@ -1,6 +1,6 @@
 {
   "name": "socket.io-wxapp-client",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "socket.io 小程序客户端",
   "main": "lib/index.js",
   "scripts": {
