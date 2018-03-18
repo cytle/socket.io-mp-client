@@ -34,3 +34,9 @@ const myappIo = require('socket.io-mp-client/socket.io-myapp.js');
 
 - 微信小程序: [lib/socket.io-wxapp.js](lib/socket.io-wxapp.js)
 - 支付宝小程序: [lib/socket.io-myapp.js](lib/socket.io-myapp.js)
+
+## 相关项目
+
+- [socket.io-client](https://github.com/socketio/socket.io-client)
+- [mp-websocket](https://github.com/cytle/mp-websocket)
+- [engine.io-mp-client](https://github.com/cytle/engine.io-mp-client)
