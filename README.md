@@ -1,4 +1,4 @@
-# socket.io-wxapp-client
+# socket.io-mp-client
 
 小程序socket.io客户端
 
@@ -8,7 +8,7 @@
 
 使用和`web`版一致, 文档在此[socket.io](https://socket.io/docs/),.
 
-**不同处**: 因为小程序没有`xhr`, 这边也就不支持`polling`(轮询), 在`engine.io-wxapp-client`包中就砍
+**不同处**: 因为小程序没有`xhr`, 这边也就不支持`polling`(轮询), 在`engine.io-mp-client`包中就砍
 掉了这部分. 对小程序开发没啥影响, 不过也需要提下
 
 1. `transports`类型, 也不支持`polling`, 只有`websocket`
@@ -17,15 +17,15 @@
 ### 1. npm包
 
 ```console
-npm install --save socket.io-wxapp-client
+npm install --save socket.io-mp-client
 ```
 
 ```js
 // 微信小程序
-const wxappIo = require('socket.io-wxapp-client');
+const wxappIo = require('socket.io-mp-client');
 
 // 支付宝小程序
-const myappIo = require('socket.io-wxapp-client/socket.io-myapp.js');
+const myappIo = require('socket.io-mp-client/socket.io-myapp.js');
 ```
 
 ### 2. 直接引入文件

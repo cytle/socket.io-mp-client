@@ -16,7 +16,7 @@ const baseConfig = {
         new UglifyJSPlugin({
             sourceMap: false,
         }),
-        new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-wxapp-client'),
+        new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-mp-client'),
     ],
 };
 

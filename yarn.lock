@@ -1196,6 +1196,21 @@ engine.io-client@~3.1.0:
     xmlhttprequest-ssl "~1.5.4"
     yeast "0.1.2"
 
+engine.io-mp-client@^3.1.22:
+  version "3.1.22"
+  resolved "https://registry.npmjs.org/engine.io-mp-client/-/engine.io-mp-client-3.1.22.tgz#e0dd1200e47fe47314714dcefa2ea3e67cb75cec"
+  dependencies:
+    component-emitter "1.2.1"
+    component-inherit "0.0.3"
+    debug "~2.6.9"
+    engine.io-parser "~2.1.1"
+    has-cors "1.1.0"
+    indexof "0.0.1"
+    mp-websocket "^1.1.12"
+    parseqs "0.0.5"
+    parseuri "0.0.5"
+    yeast "0.1.2"
+
 engine.io-parser@~2.1.1:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/engine.io-parser/download/engine.io-parser-2.1.1.tgz#e0fb3f0e0462f7f58bb77c1a52e9f5a7e26e4668"
@@ -1205,21 +1220,6 @@ engine.io-parser@~2.1.1:
     base64-arraybuffer "0.1.5"
     blob "0.0.4"
     has-binary2 "~1.0.2"
-
-engine.io-wxapp-client@^3.1.21:
-  version "3.1.21"
-  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.21.tgz#e14642c0f144279b4491db3d00c9da86dad45780"
-  dependencies:
-    component-emitter "1.2.1"
-    component-inherit "0.0.3"
-    debug "~2.6.9"
-    engine.io-parser "~2.1.1"
-    has-cors "1.1.0"
-    indexof "0.0.1"
-    mp-websocket "^1.1.11"
-    parseqs "0.0.5"
-    parseuri "0.0.5"
-    yeast "0.1.2"
 
 enhanced-resolve@^3.4.0:
   version "3.4.1"
@@ -2106,9 +2106,9 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-mp-websocket@^1.1.11:
-  version "1.1.11"
-  resolved "https://registry.npmjs.org/mp-websocket/-/mp-websocket-1.1.11.tgz#c3506cf0fcfe08035991937577fc78d84187f301"
+mp-websocket@^1.1.12:
+  version "1.1.12"
+  resolved "https://registry.npmjs.org/mp-websocket/-/mp-websocket-1.1.12.tgz#508f16c02d371caaf4778ff15076e5f6418b2038"
   dependencies:
     debug "^3.1.0"
 

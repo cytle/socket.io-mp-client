@@ -1,5 +1,5 @@
 {
-  "name": "socket.io-wxapp-client",
+  "name": "socket.io-mp-client",
   "version": "1.1.12",
   "description": "socket.io 小程序客户端",
   "main": "lib/index.js",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cytle/socket.io-wxapp-client"
+    "url": "https://github.com/cytle/socket.io-mp-client"
   },
   "author": "炒饭 <chaofan@2dfire.com>",
   "license": "ISC",
   "dependencies": {
     "debug": "^3.1.0",
-    "engine.io-wxapp-client": "^3.1.21",
+    "engine.io-mp-client": "^3.1.22",
     "socket.io-client": "^2.0.4"
   },
   "devDependencies": {
