@@ -1206,9 +1206,9 @@ engine.io-parser@~2.1.1:
     blob "0.0.4"
     has-binary2 "~1.0.2"
 
-engine.io-wxapp-client@^3.1.19:
-  version "3.1.19"
-  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.19.tgz#b625f1ae05000427b608ded6556f8f53b4441a17"
+engine.io-wxapp-client@^3.1.21:
+  version "3.1.21"
+  resolved "https://registry.npmjs.org/engine.io-wxapp-client/-/engine.io-wxapp-client-3.1.21.tgz#e14642c0f144279b4491db3d00c9da86dad45780"
   dependencies:
     component-emitter "1.2.1"
     component-inherit "0.0.3"
@@ -1216,9 +1216,9 @@ engine.io-wxapp-client@^3.1.19:
     engine.io-parser "~2.1.1"
     has-cors "1.1.0"
     indexof "0.0.1"
+    mp-websocket "^1.1.11"
     parseqs "0.0.5"
     parseuri "0.0.5"
-    wxapp-websocket "^1.1.10"
     yeast "0.1.2"
 
 enhanced-resolve@^3.4.0:
@@ -2105,6 +2105,12 @@ move-concurrently@^1.0.1:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
     run-queue "^1.0.3"
+
+mp-websocket@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.npmjs.org/mp-websocket/-/mp-websocket-1.1.11.tgz#c3506cf0fcfe08035991937577fc78d84187f301"
+  dependencies:
+    debug "^3.1.0"
 
 ms@2.0.0:
   version "2.0.0"
@@ -3181,12 +3187,6 @@ ws@~3.3.1:
     async-limiter "~1.0.0"
     safe-buffer "~5.1.0"
     ultron "~1.1.0"
-
-wxapp-websocket@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.npmjs.org/wxapp-websocket/-/wxapp-websocket-1.1.10.tgz#ce45f298ecaf0db97f5a8c558d24dbc6ef61829c"
-  dependencies:
-    debug "^3.1.0"
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.4"
