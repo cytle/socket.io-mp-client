@@ -1,12 +1,12 @@
 # socket.io-mp-client
 
-小程序socket.io客户端
+小程序socket.io客户端, 支持微信小程序、支付宝小程序
 
 ![socket.io-client v-2.0.4](https://img.shields.io/badge/socket.io--client-v2.0.4-blue.svg)
 
 ## Usage
 
-使用和`web`版一致, 文档在此[socket.io](https://socket.io/docs/),.
+使用和`web`版一致, 文档在此[socket.io](https://socket.io/docs/).
 
 **不同处**: 因为小程序没有`xhr`, 这边也就不支持`polling`(轮询), 在`engine.io-mp-client`包中就砍
 掉了这部分. 对小程序开发没啥影响, 不过也需要提下
@@ -38,4 +38,6 @@ const myappIo = require('socket.io-mp-client/socket.io-myapp.js');
 - [mp-websocket](https://github.com/cytle/mp-websocket)
 - [engine.io-mp-client](https://github.com/cytle/engine.io-mp-client)
 
-## 关于测试
+## 关于单元测试
+
+该项目只是重新打包了`socket.io-client`,对于不同类型小程序兼容由`mp-websocket`提供.此项目暂无单元测试
