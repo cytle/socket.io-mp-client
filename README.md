@@ -21,16 +21,12 @@ npm install --save socket.io-mp-client
 ```
 
 ```js
-// 微信小程序
 const wxappIo = require('socket.io-mp-client');
-
-// 支付宝小程序
-const myappIo = require('socket.io-mp-client/socket.io-myapp.js');
 ```
 
 ### 2. 直接引入文件
 
-按需把文件[lib/socket.io-mp.js](lib/socket.io-wxapp.js)拷贝到工程目录下, 然后引入.
+按需把文件[lib/socket.io-mp.js](lib/socket.io-mp.js)拷贝到工程目录下, 然后引入.
 
 ## 相关项目
 
