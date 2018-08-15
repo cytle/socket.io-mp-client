@@ -16,7 +16,6 @@ const baseConfig = {
         new UglifyJSPlugin({
             sourceMap: false,
         }),
-        new webpack.NormalModuleReplacementPlugin(/^engine.io-client$/, 'engine.io-mp-client'),
     ],
 };
 
@@ -29,6 +28,9 @@ const commonJsConfig = merge(baseConfig, {
         (context, request, callback) => {
             if (/^socket\.io-client$/.test(request)) {
                 return callback();
+            }
+            if (/^engine\.io-client/.test(request)) {
+                return callback(null, `commonjs ${request.replace(/^engine\.io-client/, 'engine.io-mp-client')}`);
             }
             if (/^[^/\\]*$/.test(request)) {
                 return callback(null, `commonjs ${request}`);
@@ -51,6 +53,12 @@ const singleConfig = merge(baseConfig, {
     resolve: {
         alias: {
             debug: path.resolve(path.join(__dirname, 'node_modules', 'debug')),
+        },
+    },
+
+    externals: {
+        'engine.io-client': {
+            commonjs: 'engine.io-mp-client',
         },
     },
     plugins: [
