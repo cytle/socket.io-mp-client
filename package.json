@@ -1,6 +1,6 @@
 {
   "name": "socket.io-mp-client",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "description": "socket.io 小程序客户端",
   "main": "lib/index.js",
   "scripts": {
