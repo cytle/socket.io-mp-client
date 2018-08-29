@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "debug": "^3.1.0",
-    "engine.io-mp-client": "^3.1.22"
+    "engine.io-mp-client": "^3.1.23"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
