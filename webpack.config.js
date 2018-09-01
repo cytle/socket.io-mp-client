@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const Visualizer = require('webpack-visualizer-plugin');
 const merge = require('webpack-merge');
@@ -50,17 +49,14 @@ const singleConfig = merge(baseConfig, {
     output: {
         filename: 'socket.io-mp.js',
     },
+
     resolve: {
         alias: {
             debug: path.resolve(path.join(__dirname, 'node_modules', 'debug')),
+            'engine.io-client': 'engine.io-mp-client',
         },
     },
 
-    externals: {
-        'engine.io-client': {
-            commonjs: 'engine.io-mp-client',
-        },
-    },
     plugins: [
         new Visualizer({
             filename: './statistics/single.html',
